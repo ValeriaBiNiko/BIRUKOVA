@@ -1,16 +1,16 @@
-/* сбрасываем все отступы. * означает , что относиться ко всем элементам*/
+/* Г±ГЎГ°Г Г±Г»ГўГ ГҐГ¬ ГўГ±ГҐ Г®ГІГ±ГІГіГЇГ». * Г®Г§Г­Г Г·Г ГҐГІ , Г·ГІГ® Г®ГІГ­Г®Г±ГЁГІГјГ±Гї ГЄГ® ГўГ±ГҐГ¬ ГЅГ«ГҐГ¬ГҐГ­ГІГ Г¬*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* подключаем шрифты*/
+/* ГЇГ®Г¤ГЄГ«ГѕГ·Г ГҐГ¬ ГёГ°ГЁГґГІГ»*/
 @font-face {
   font-family: OpenSans-Regular, Arial, sans-serif;
   src: url
     (
-      "https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff"
+      "OpenSans-Regular.woff"
     );
   font-weight: 700;
   font-style: normal;
@@ -20,7 +20,7 @@
   font-family: OpenSans-Bold, Arial, sans-serif;
   src: url
     (
-      "https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff"
+      "OpenSans-Bold.woff"
     );
   font-weight: 700;
   font-style: normal;
@@ -38,11 +38,11 @@
   padding: 35px 45px 145px 45px;
   margin-bottom: 60px;
 
-  z-index: 2; /*очередь воспроизведения */
+  z-index: 2; /*Г®Г·ГҐГ°ГҐГ¤Гј ГўГ®Г±ГЇГ°Г®ГЁГ§ГўГҐГ¤ГҐГ­ГЁГї */
   text-align: center;
 }
 
-/*Задает подложку*/
+/*Г‡Г Г¤Г ГҐГІ ГЇГ®Г¤Г«Г®Г¦ГЄГі*/
 .welcome::after {
   content: "";
   position: absolute;
@@ -60,21 +60,21 @@
 
 .container {
   display: flex;
-  justify-content: space-between; /*выравниваем по оси по бокам*/
+  justify-content: space-between; /*ГўГ»Г°Г ГўГ­ГЁГўГ ГҐГ¬ ГЇГ® Г®Г±ГЁ ГЇГ® ГЎГ®ГЄГ Г¬*/
 }
 
 .container-logo {
-  width: 185px; /*ширина логотипа*/
+  width: 185px; /*ГёГЁГ°ГЁГ­Г  Г«Г®ГЈГ®ГІГЁГЇГ */
 }
 
 .menu-list {
-  display: flex; /*создаем флекс-контейнер*/
+  display: flex; /*Г±Г®Г§Г¤Г ГҐГ¬ ГґГ«ГҐГЄГ±-ГЄГ®Г­ГІГҐГ©Г­ГҐГ°*/
 
-  margin-top: 10px; /*внешний отступ*/
+  margin-top: 10px; /*ГўГ­ГҐГёГ­ГЁГ© Г®ГІГ±ГІГіГЇ*/
 }
 
 .menu-list-item {
-  list-style-type: none; /*ставим без кружочков списки*/
+  list-style-type: none; /*Г±ГІГ ГўГЁГ¬ ГЎГҐГ§ ГЄГ°ГіГ¦Г®Г·ГЄГ®Гў Г±ГЇГЁГ±ГЄГЁ*/
 }
 
 .menu-list-item:nth-child(n + 2) {
@@ -87,7 +87,7 @@
   font-size: 14px;
   text-decoration: none;
   color: #ffffff;
-  text-transform: uppercase; /* заглавными буквами текс*/
+  text-transform: uppercase; /* Г§Г ГЈГ«Г ГўГ­Г»Г¬ГЁ ГЎГіГЄГўГ Г¬ГЁ ГІГҐГЄГ±*/
 }
 
 .menu-link:hover {
@@ -103,11 +103,11 @@
   text-transform: uppercase;
 }
 
-/*Левая основная часть */
+/*Г‹ГҐГўГ Гї Г®Г±Г­Г®ГўГ­Г Гї Г·Г Г±ГІГј */
 
 .content {
   display: flex;
-  justify-content: space-between; /*выравниваем по оси по бокам*/
+  justify-content: space-between; /*ГўГ»Г°Г ГўГ­ГЁГўГ ГҐГ¬ ГЇГ® Г®Г±ГЁ ГЇГ® ГЎГ®ГЄГ Г¬*/
   max-width: 1200px;
 
   margin: auto;
@@ -141,7 +141,7 @@
 }
 
 .card-list-item {
-  list-style-type: none; /*ставим без кружочков списки*/
+  list-style-type: none; /*Г±ГІГ ГўГЁГ¬ ГЎГҐГ§ ГЄГ°ГіГ¦Г®Г·ГЄГ®Гў Г±ГЇГЁГ±ГЄГЁ*/
 }
 
 .card-list-item:nth-child(n + 2) {
@@ -216,7 +216,7 @@ p {
   margin-top: 55px;
 }
 
-/*Правая часть с новыми постами*/
+/*ГЏГ°Г ГўГ Гї Г·Г Г±ГІГј Г± Г­Г®ГўГ»Г¬ГЁ ГЇГ®Г±ГІГ Г¬ГЁ*/
 
 .side_bar_section {
   width: 280px;
@@ -267,7 +267,7 @@ p {
   color: #b59f5b;
 }
 
-/*Поисковик*/
+/*ГЏГ®ГЁГ±ГЄГ®ГўГЁГЄ*/
 
 .form_row {
   display: flex;
@@ -296,7 +296,7 @@ p {
   background-color: #323232;
 }
 
-/*Рассылка*/
+/*ГђГ Г±Г±Г»Г«ГЄГ */
 
 .adres_title {
   font-size: 14px;
@@ -333,7 +333,7 @@ p {
   background-color: #323232;
 }
 
-/*ТЕГИ*/
+/*Г’Г…ГѓГ€*/
 
 .teg {
   text-align: center;
@@ -366,7 +366,7 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 
-  border: 3px solid #ededed; /*Границу тегов*/
+  border: 3px solid #ededed; /*ГѓГ°Г Г­ГЁГ¶Гі ГІГҐГЈГ®Гў*/
   padding: 9px 15px 6px 15px;
 }
 
@@ -374,7 +374,7 @@ p {
   border: 3px solid #b59f5b;
 }
 
-/*ТЕМЫ*/
+/*Г’Г…ГЊГ›*/
 .tema-title {
   font-family: OpenSans-Bold;
   font-size: 14px;
@@ -419,7 +419,7 @@ p {
   position: absolute;
 }
 
-/*Подвал*/
+/*ГЏГ®Г¤ГўГ Г«*/
 
 footer {
   display: flex;
@@ -481,7 +481,7 @@ footer {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/*Нижняя подпись*/
+/*ГЌГЁГ¦Г­ГїГї ГЇГ®Г¤ГЇГЁГ±Гј*/
 .copyright {
   font-family: OpenSans-Bold;
   font-weight: 700;
@@ -497,7 +497,7 @@ footer {
   font-size: 12px;
 }
 
-/*ЧЕРТОЧКИ*/
+/*Г—Г…ГђГ’ГЋГ—ГЉГ€*/
 .side_bar_section::before {
   content: "";
   position: absolute;
